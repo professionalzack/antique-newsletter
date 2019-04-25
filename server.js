@@ -36,7 +36,9 @@ app.get('/', (req, res) => {
 
 //GET Index User Route
 app.get('/api/users', (req, res) => {
+    console.log('yo wheat')
     db.User.find().exec((err, user) => {
+        console.log('chekcing for users')
         if (err) return res.status(500);
       res.json(user);
     })
