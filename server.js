@@ -44,6 +44,13 @@ app.get('/api/users', (req, res) => {
     })
 });
 
+//POST Create User Route
+app.post('/api/users', (req, res) => {
+    db.User.create(req.body, (err, newUser)=>{
+        if (err) return res.status(500);
+        res.json(newUser)
+    })
+});
 
 
 
