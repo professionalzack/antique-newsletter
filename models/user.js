@@ -6,10 +6,10 @@ const UserSchema = new Schema({
   lastName: String,
   email: String,
   topics: Array,
-  signUpDate: {
-    type: Date,
-    default: Date.now
-  }
+//   signUpDate: {
+//     type: Date,
+//     default: Date.now
+//   }
 });
 
 const User = mongoose.model('User', UserSchema);
