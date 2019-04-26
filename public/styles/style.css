@@ -19,17 +19,19 @@ h5 {
 
 a {
     font-size: 12px;
-    margin-bottom: 0px:
+    margin-bottom: 0px;
 }
 
 p {
     margin-bottom: 0px;
 }
-.card{ 
+
+.card {
     border: transparent;
     padding: 0;
     line-height: 120%;
 }
+
 .form-control {
     font-size: 12px;
 }
@@ -83,11 +85,10 @@ label {
     text-align: center;
     justify-content: center;
     align-content: center;
-    margin-top: 
+    margin-top:
 }
 
-
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     .modal-header {
         border-bottom: none;
         flex-direction: column;
@@ -95,7 +96,6 @@ label {
         justify-content: center;
         align-content: center;
     }
-    
 }
 
 .modal-header>h1,
@@ -122,83 +122,72 @@ a:hover {
     color: white;
 }
 
-
 .modal-dialog {
     max-width: 1000px;
     margin: 1.75rem auto;
 }
 
 .modal.modal-wide .modal-dialog {
-  width: 90%;
+    width: 90%;
 }
 
 .modal-wide .modal-body {
-  overflow-y: auto;
+    overflow-y: auto;
 }
 
-
-  .modal-dialog {
+.modal-dialog {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-  }
+}
 
-  .modal {
+.modal {
     text-align: center;
-  }
+}
 
-  .modal-header {
-      padding-bottom: 0;
-  }
+.modal-header {
+    padding-bottom: 0;
+}
 
-  .modal-body {
-      padding-top: 0;
-  }
+.modal-body {
+    padding-top: 0;
+}
 
-  .modal-footer {
-      margin-bottom: 60px;
-      padding-top: 0px;
-  }
+.modal-footer {
+    margin-bottom: 60px;
+    padding-top: 0px;
+}
 
-  .store {
-      height: 100vh;
-      width: 100vw;
-      background-image: url('../images/desktop.png');
-      background-size: cover;
+.store {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/desktop.png');
+    background-size: cover;
+}
 
-  }
-  
-  @media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
     .modal:before {
-      display: inline-block;
-      vertical-align: middle;
-      content: " ";
-      height: 100vh;
-      overflow: auto;
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100vh;
+        overflow: auto;
     }
-
     h1 {
         font-size: 64px;
     }
-
     h5 {
         font-size: 36px;
     }
-
     .store {
         background-image: url('../images/mobile.png');
     }
-  }
+}
 
 .modal-content {
     border-radius: 0;
 }
-  
-  .modal.show .modal-dialog {
-      margin: 0;
-  }
-  /* .container {
-    height: 100vh;
-    overflow: auto;
-} */
+
+.modal.show .modal-dialog {
+    margin: 0;
 }
