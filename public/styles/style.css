@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 150%;
+<<<<<<< HEAD
+=======
 }
 
 .input-line {
@@ -61,4 +63,5 @@ a, a:visited, a:hover{
     background-color: black;
     border-radius: 0;
     color: white;
+>>>>>>> 92600fd1cc6cc88a4702ef6365711c43d08601b2
 }
