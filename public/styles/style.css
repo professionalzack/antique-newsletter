@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-size: 34px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 h5 {
@@ -28,6 +28,7 @@ p {
 .card{ 
     border: transparent;
     padding: 0;
+    line-height: 120%;
 }
 .form-control {
     font-size: 12px;
@@ -35,7 +36,8 @@ p {
 
 .btn {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    /* margin-top: -10px; */
 }
 
 .input-line {
@@ -144,6 +146,27 @@ a:hover {
   .modal {
     text-align: center;
   }
+
+  .modal-header {
+      padding-bottom: 0;
+  }
+
+  .modal-body {
+      padding-top: 0;
+  }
+
+  .modal-footer {
+      margin-bottom: 60px;
+      padding-top: 0px;
+  }
+
+  .store {
+      height: 100vh;
+      width: 100vw;
+      background-image: url('../images/desktop.png');
+      background-size: cover;
+
+  }
   
   @media screen and (min-width: 768px) { 
     .modal:before {
@@ -160,6 +183,10 @@ a:hover {
 
     h5 {
         font-size: 36px;
+    }
+
+    .store {
+        background-image: url('../images/mobile.png');
     }
   }
 
