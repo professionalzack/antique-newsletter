@@ -23,8 +23,6 @@ function handleSuccess(data) {
                             <th>${user.firstName}</th>
                             <th>${user.lastName}</th>
                             <th>${user.email}</th>
-                            <th>${user.weekly && 'X' || ''}</th>
-                            <th>${user.monthly && 'X' || ''}</th>
                             `)
     })
 }
