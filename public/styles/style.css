@@ -43,7 +43,7 @@ p {
     align-content: center;
 }
 
-.fas{
+.fas {
     font-size: 1.5em;
 }
 
@@ -55,6 +55,7 @@ p {
 .closing-button {
     opacity: 0;
 }
+
 .closing-button:focus {
     opacity: 100;
 }
@@ -95,11 +96,15 @@ label {
     
 }
 
-.modal-header > h1, h5, p {
+.modal-header>h1,
+h5,
+p {
     width: 100%;
 }
 
-a, a:visited, a:hover{
+a,
+a:visited,
+a:hover {
     color: grey;
 }
 
@@ -108,8 +113,6 @@ a, a:visited, a:hover{
     text-align: center;
     line-height: 15px;
 }
-
-
 
 .btn-black {
     background-color: black;
@@ -171,3 +174,4 @@ a, a:visited, a:hover{
     height: 100vh;
     overflow: auto;
 } */
+}
