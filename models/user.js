@@ -5,11 +5,8 @@ const UserSchema = new Schema({
   firstName: String,
   lastName: String,
   email: String,
-  topics: Array,
-//   signUpDate: {
-//     type: Date,
-//     default: Date.now
-//   }
+  monthly: Boolean,
+  weekly: Boolean
 });
 
 const User = mongoose.model('User', UserSchema);
