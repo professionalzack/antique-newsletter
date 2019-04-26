@@ -12,10 +12,12 @@ const db = require("./models");
 // ============================= MIDDLE WARE ================================ //
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -31,17 +33,17 @@ app.use(express.static(__dirname + "/public"));
 
 //GET Root Route
 app.get('/', (req, res) => {
-    res.render('dashboard');
+  res.render('dashboard');
 });
 
 //GET Index User Route
 app.get('/api/users', (req, res) => {
-    console.log('yo wheat')
-    db.User.find().exec((err, user) => {
-        console.log('chekcing for users')
-        if (err) return res.status(500);
-      res.json(user);
-    })
+  console.log('yo wheat')
+  db.User.find().exec((err, user) => {
+    console.log('chekcing for users')
+    if (err) return res.status(500);
+    res.json(user);
+  })
 });
 
 

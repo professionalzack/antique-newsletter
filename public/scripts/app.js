@@ -5,13 +5,13 @@ const userList = {
     success: handleSuccess
 }
 
-function handleSuccess(data){
+function handleSuccess(data) {
     console.log(data)
 
 
 
-    data.forEach(user => {
-        $('.user-list').append(`<li>${user.firstName} ${user.lastName}   ${user.email}     interested in ${user.topics.join(', ')}</li>`)
+    data.forEach((user, i) => {
+        $('.table').append(`<tr><td>${i + 1}</td><td>${user.firstName}</td><td> ${user.lastName}</td>  <td>${user.email}</td>  </tr>`)
     })
 }
 
