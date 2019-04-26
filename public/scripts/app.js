@@ -10,13 +10,14 @@ function handleSuccess(data) {
 
 
 
-    data.forEach((user, key) => {
-        $('.tbody').append(`<th scope ="row">${key}</th>
-                            <td>${user.firstName}</td>
-                            <td>${user.lastName}</td>
-                            <td>${user.email}</td>
-                            <td>${user.weekly && 'X' || ''}</td>
-                            <td>${user.monthly && 'X' || ''}</td>
+    data.forEach((user, i) => {
+        $('.table').append(`<tr scope ="row"></tr>
+                            <th>${i + 1}</th>
+                            <th>${user.firstName}</th>
+                            <th>${user.lastName}</th>
+                            <th>${user.email}</th>
+                            <th>${user.weekly && 'X' || ''}</th>
+                            <th>${user.monthly && 'X' || ''}</th>
                             `)
     })
 }
