@@ -5,12 +5,12 @@ const userList = {
     success: handleSuccess
 }
 
-// const inputLock = {
-//     firstNameCheck: true,
-//     lastNameCheck: true,
-//     emailCheck: true
+const inputLock = {
+    firstNameCheck: true,
+    lastNameCheck: true,
+    emailCheck: true
 
-// }
+}
 
 function handleSuccess(data) {
     console.log(data)
@@ -62,15 +62,12 @@ $('form').on('focusout', 'input', event => {
             console.log($(`#${$input[0].name}Check`));
 
             $input.removeClass('error')
-                // console.log(`inputCount = ${inputCount}`)
-                // inputLock[`${$input[0].name}Check`] = false;
+            inputLock[`${$input[0].name}Check`] = false;
         } else {
             $(`#${$input[0].name}Check`).attr('class', 'fas fa-times-circle')
             $input.addClass('error')
-                // inputLock[`${$input[0].name}Check`] = true;
+            inputLock[`${$input[0].name}Check`] = true;
 
-            // inputCount--
-            // console.log(`inputCount = ${inputCount}`)
         }
         $(`#${$input[0].name}Check`).css('opacity', 100)
     }
@@ -79,23 +76,21 @@ $('form').on('focusout', 'input', event => {
         var isValidEmailAddress = re.test($input.val());
         if (!isValidEmailAddress) {
             $(`#${$input[0].name}Check`).attr('class', 'fas fa-times-circle');
-            // inputCount--
-            // console.log(`inputCount = ${inputCount}`)
+
         } else {
             $(`#${$input[0].name}Check`).attr('class', 'fas fa-check-circle')
-                // inputLock[`${$input[0].name}Check`] = false;
+            inputLock[`${$input[0].name}Check`] = false;
 
-            // inputCount++
-            // console.log(`inputCount = ${inputCount}`)
+
         }
         $(`#${$input[0].name}Check`).css('opacity', 100)
             // if ($('form-control').forEach(input => console.log(!input.hasClass('error'))) === 3) {
             //     $('.btn-black').removeClass('disabled')
     }
 
-    // if (!inputLock.firstNameCheck & !inputLock.lastNameCheck && !inputLock.emailCheck) {
-    //     console.log('first name check')
-    //     $('.btn-black').removeClass('disabled')
+    if (!inputLock.firstNameCheck & !inputLock.lastNameCheck && !inputLock.emailCheck) {
+        console.log('first name check')
+        $('.btn-black').removeClass('disabled')
 
-    // }
+    }
 })
