@@ -7,41 +7,29 @@ const users_list = [
         firstName: "Zach",
         lastName: "Suess",
         email: "zach@gmail.com",
-        topics: [
-            'cars',
-            'books',
-            'lamps' 
-        ],
+        weekly: true,
+        monthly: false,
     },
     {
         firstName: "John",
         lastName: "Smith",
         email: "jsmith@gmail.com",
-        topics: [
-            'bed',
-            'furniture',
-            'lamps' 
-        ],
+        weekly: true,
+        monthly: false,
     },
     {
         firstName: "Steve",
         lastName: "Tyler",
         email: "styler@gmail.com",
-        topics: [
-            'trinkets',
-            'rocking chairs',
-            'tables' 
-        ],
+        weekly: false,
+        monthly: true,
     },
     {
         firstName: "James",
         lastName: "Dean",
         email: "zach@gmail.com",
-        topics: [
-            'cars',
-            'furniture',
-            'lamps' 
-        ],
+        weekly: false,
+        monthly: true,
     }
 ];
 

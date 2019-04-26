@@ -5,7 +5,7 @@ const userList = {
     success: handleSuccess
 }
 
-function handleSuccess(data){
+function handleSuccess(data) {
     console.log(data)
 
 
