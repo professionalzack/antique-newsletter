@@ -19,12 +19,8 @@ function handleSuccess(data) {
 
     data.forEach((user, i) => {
         $('.table').append(`<tr scope ="row"></tr>
-                            <th>${i + 1}</th>
-                            <th>${user.firstName}</th>
-                            <th>${user.lastName}</th>
+                            <th>${user.firstName}     ${user.lastName}</th>
                             <th>${user.email}</th>
-                            <th>${user.weekly && 'X' || ''}</th>
-                            <th>${user.monthly && 'X' || ''}</th>
                             `)
     })
 }
@@ -34,12 +30,19 @@ $.ajax(userList);
 
 $('form').on('submit', event => {
     event.preventDefault();
+
+    carlosSubmit();
+
+    setTimeout(() => {
+        $('#newsletterModal').modal('hide')
+    }, 3000);
+
     console.log('submittted')
     let formData = {
         method: "POST",
         url: 'api/users',
         error: err => console.log(err),
-        success: () => console.log(data),
+        success: json => console.log(json),
         data: $('form').serialize()
     }
 
@@ -94,3 +97,20 @@ $('form').on('focusout', 'input', event => {
 
     }
 })
+
+
+function carlosSubmit() {
+    if (!$(this).hasClass('loading')) {
+        $(this).addClass('loading');
+        let self = this;
+
+        setTimeout(function() {
+            $(self).removeClass('loading');
+            $(self).text('checkmark');
+        }, 1000);
+
+        setTimeout(function() {
+            $(self).text('SUBMIT');
+        }, 3000);
+    }
+};

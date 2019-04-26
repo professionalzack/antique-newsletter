@@ -33,8 +33,14 @@ app.use(express.static(__dirname + "/public"));
 
 //GET Root Route
 app.get('/', (req, res) => {
+    res.render('store');
+});
+
+//GET Dashboard
+app.get('/admin', (req, res) => {
     res.render('dashboard');
 });
+
 
 
 //GET Index User Route
