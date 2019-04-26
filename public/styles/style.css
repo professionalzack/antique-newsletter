@@ -3,6 +3,10 @@
     src: url('/Users/jerusalemlipardo/Downloads/Exported Fonts/Avenir/Avenir.ttc');
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     line-height: 150%;
@@ -161,7 +165,7 @@ a:hover {
 .store {
     height: 100vh;
     width: 100vw;
-    background-image: url('../images/desktop.png');
+    background-image: url('../images/alphen-antiques-collectables-market-1_orig.jpg');
     background-size: cover;
 }
 
@@ -172,6 +176,7 @@ a:hover {
         content: " ";
         height: 100vh;
         overflow: auto;
+        opacity: .95;
     }
     h1 {
         font-size: 64px;
@@ -186,6 +191,7 @@ a:hover {
 
 .modal-content {
     border-radius: 0;
+    opacity: .75;
 }
 
 .modal.show .modal-dialog {
