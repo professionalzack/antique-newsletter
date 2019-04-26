@@ -1,6 +1,43 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('/Users/jerusalemlipardo/Downloads/Exported Fonts/Avenir/Avenir.ttc');
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 150%;
+}
+
+h1 {
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+a {
+    font-size: 12px;
+    margin-bottom: 0px:
+}
+
+p {
+    margin-bottom: 0px;
+}
+.card{ 
+    border: transparent;
+    padding: 0;
+    line-height: 120%;
+}
+.form-control {
+    font-size: 12px;
+}
+
+.btn {
+    font-size: 18px;
+    margin-bottom: 40px;
+    /* margin-top: -10px; */
 }
 
 .input-line {
@@ -46,6 +83,19 @@ label {
     text-align: center;
     justify-content: center;
     align-content: center;
+    margin-top: 
+}
+
+
+@media (min-width: 576px) { 
+    .modal-header {
+        border-bottom: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
 }
 
 .modal-header>h1,
@@ -60,8 +110,95 @@ a:hover {
     color: grey;
 }
 
+#newsLetterFooter {
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+}
+
 .btn-black {
     background-color: black;
     border-radius: 0;
     color: white;
+}
+
+
+.modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .modal {
+    text-align: center;
+  }
+
+  .modal-header {
+      padding-bottom: 0;
+  }
+
+  .modal-body {
+      padding-top: 0;
+  }
+
+  .modal-footer {
+      margin-bottom: 60px;
+      padding-top: 0px;
+  }
+
+  .store {
+      height: 100vh;
+      width: 100vw;
+      background-image: url('../images/desktop.png');
+      background-size: cover;
+
+  }
+  
+  @media screen and (min-width: 768px) { 
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100vh;
+      overflow: auto;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h5 {
+        font-size: 36px;
+    }
+
+    .store {
+        background-image: url('../images/mobile.png');
+    }
+  }
+
+.modal-content {
+    border-radius: 0;
+}
+  
+  .modal.show .modal-dialog {
+      margin: 0;
+  }
+  /* .container {
+    height: 100vh;
+    overflow: auto;
+} */
 }
